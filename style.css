@@ -1,0 +1,97 @@
+*,*::after,*::before{
+    margin : 0rem;
+    padding : 0rem;
+    box-sizing : border-box;
+}
+
+body{
+    height : 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background : burlywood;
+}
+
+.mainDiv{
+    width : 400px;
+    background : mediumorchid;
+    height : 400px;
+    position : relative;
+}
+
+.mainDiv__steps ul{
+    list-style: none;
+    width : 100%;
+    background : mediumvioletred;
+    display : flex;
+    justify-content: space-between;
+}
+
+.mainDiv__steps li{
+    padding : 1rem;
+    font-size : 1.1rem;
+    color : white;
+}
+
+.mainDiv__formHolder{
+    background : red;
+    height : 100%;
+    position : relative;
+    overflow : hidden;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainDiv__createAccount{
+    background : orange;
+    height : 80%;
+    width : 80%;
+    position : absolute;
+    z-index : 3;
+}
+
+.mainDiv__createAccount h2{
+    text-align: center;
+    padding : .75rem;
+    margin-bottom: 1rem;
+}
+
+.mainDiv__socialLinks{
+    background : mediumturquoise;
+    height : 80%;
+    width : 80%;
+    position : absolute;
+    z-index : 2;
+}
+
+.mainDiv__personalInfo{
+    background : darkcyan;
+    height : 80%;
+    width : 80%;
+    position : absolute;
+    z-index : 1;
+}
+
+input{
+    display: block;
+    width : 70%;
+    margin : .8rem auto;
+    padding : 10px 5px;
+    border : 0;
+    border-bottom: 1.5px solid green;
+    outline : none;
+}
+
+.mainDiv__createAccount a{
+    display: inline-block;
+    text-decoration: none;
+    background: blue;
+    color : white;
+    padding : .5rem 1.5rem;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top : 1rem;
+}
