@@ -51,7 +51,7 @@ body{
     z-index : 3;
 }
 
-.mainDiv__createAccount h2{
+h2{
     text-align: center;
     padding : .75rem;
     margin-bottom: 1rem;
@@ -75,7 +75,7 @@ body{
 
 input{
     display: block;
-    width : 70%;
+    width : 75%;
     margin : .8rem auto;
     padding : 10px 5px;
     border : 0;
@@ -94,4 +94,18 @@ input{
     left: 50%;
     transform: translateX(-50%);
     margin-top : 1rem;
+}
+
+.mainDiv__btns{
+    text-align: center;
+    margin-top : 2rem;
+}
+
+.mainDiv__btns a{
+    text-decoration: none;
+    background : blue;
+    color : white;
+    padding : .5rem 1.5rem;
+    border-radius: 50px;
+    margin : 0rem .5rem;
 }
