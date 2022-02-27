@@ -10,6 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     background : burlywood;
+    overflow: hidden;
 }
 
 .mainDiv{
@@ -37,7 +38,6 @@ body{
     background : red;
     height : 100%;
     position : relative;
-    overflow : hidden;
     display : flex;
     justify-content: center;
     align-items: center;
@@ -49,6 +49,11 @@ body{
     width : 80%;
     position : absolute;
     z-index : 3;
+    transition: all .7s .1s ease-in-out;
+}
+
+.cMoveRight{
+    transform : translateX(400px);
 }
 
 h2{
@@ -57,12 +62,30 @@ h2{
     margin-bottom: 1rem;
 }
 
+/* INITIALLY SOCIAL LINKS DIV WILL BE LEFT MOST*/
+
 .mainDiv__socialLinks{
     background : mediumturquoise;
     height : 80%;
     width : 80%;
     position : absolute;
     z-index : 2;
+    transform: translateX(-400px);
+    /* opacity: 0; */
+}
+
+.sMoveMiddle{
+    transform: translateX(0px);
+}
+
+.sMoveLeft{
+    transform: translate(0px);
+    transition: all 1s ease;
+}
+
+.sMoveDoubleRight{
+    transform: translateX(400px);
+    transition: all 1s ease;
 }
 
 .mainDiv__personalInfo{
@@ -71,6 +94,11 @@ h2{
     width : 80%;
     position : absolute;
     z-index : 1;
+    transform: translateX(-800px);
+}
+
+.pMoveMiddle{
+    transform: translateX(0px);   
 }
 
 input{
@@ -79,7 +107,7 @@ input{
     margin : .8rem auto;
     padding : 10px 5px;
     border : 0;
-    border-bottom: 1.5px solid green;
+    border-bottom: 1.5px solid #191919;
     outline : none;
 }
 

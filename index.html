@@ -21,7 +21,7 @@
 
         <div class = "mainDiv__formHolder">
 
-            <div class = "mainDiv__createAccount">
+            <div class = "mainDiv__createAccount" id = "createAccount">
 
                 <h2>Create Account</h2>
 
@@ -29,17 +29,17 @@
                 <input type="password" id="password" placeholder="Password">
                 <input type="email" id="email" placeholder="Email">
 
-                <a href="#">Next</a>
-
+                <a href="#" id = "cNext">Next</a>
+ 
             </div>
     
-            <div class = "mainDiv__socialLinks">
+            <div class = "mainDiv__socialLinks" id = "socialLinks">
 
                 <h2>Social Links</h2>
 
-                <input type="text" id = "name" placeholder = "Github">
-                <input type="text" id= "password" placeholder = "Twitter">
-                <input type="text" id= "email" placeholder="LinkedIn">
+                <input type="text" id = "Github" placeholder = "Github">
+                <input type="text" id= "Twitter" placeholder = "Twitter">
+                <input type="text" id= "LinkedIn" placeholder="LinkedIn">
 
                 <div class="mainDiv__btns">
                     <a href="#" id = "sBack">Back</a>
@@ -49,7 +49,7 @@
 
             </div>
     
-            <div class = "mainDiv__personalInfo">
+            <div class = "mainDiv__personalInfo" id = "personalInfo">
 
                 <h2>Personal Info</h2>
 
@@ -67,5 +67,6 @@
         </div>
     </div>
 
+    <script src="./index.js"></script>
 </body>
 </html>
