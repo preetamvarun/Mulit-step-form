@@ -38,6 +38,7 @@ body{
     justify-content: space-evenly;
     z-index: 1;
     background-color: white;
+    overflow: hidden;
 }
 
 .mainDiv__steps ul{
@@ -46,8 +47,7 @@ body{
     justify-content: space-evenly;
     color : #241a1a;
     border-bottom: 1px solid #191919;
-    width : 90%;
-    margin : auto;
+    width : 100%;
     position: relative;
 }
 
@@ -56,30 +56,58 @@ body{
 }
 
 .mainDiv__statusBar{
-    background-color: rgba(185, 51, 27, 0.74);
-    width : 35%;
-    padding : 1.3rem 0rem;
+    background-color: orange;
+    width : 32%;
+    height: 100%;
     transform: translateY(-100%);
-    margin-left : 5%;
     position: absolute;
-    z-index: 0;
+    transition: all .75s ease;  
+}
+
+.mainDiv__statusBar::after{
+    position: absolute;
+    content: "";
+    height: 0px;
+    width: 0px;
+    border : 21px solid;
+    border-color: transparent transparent transparent orange;
+    left : 121px;
+    transform: translateY(-1.5%);
     transition: all .75s ease;
 }
 
 .mainDiv__statusBar.trail1{
-    width: 62%;
+    width: 58%;
+}
+
+.mainDiv__statusBar.trail1::after{
+    left: 218px;
+
 }
 
 .mainDiv__statusBar.trail2{
-    width : 90%;
+    width : 100%;
 }
 
+.mainDiv__statusBar.trail2::after{
+    left : 378px;
+}
+
+
 .mainDiv__statusBar.trail3{
-    width : 62%;
+    width : 58%;
+}
+
+.mainDiv__statusBar.trail3::after{
+    left : 218px;
 }
 
 .mainDiv__statusBar.trail4{
-    width : 35%;
+    width : 32%;
+}
+
+.mainDiv__statusBar.trail4::after{
+    left : 121px;
 }
 
 .mainDiv__steps li{
