@@ -15,7 +15,7 @@ body{
 
 .mainDiv{
     width : 400px;
-    background : mediumorchid;
+    /* background : mediumorchid; */
     height : 400px;
     position : relative;
 }
@@ -35,21 +35,21 @@ body{
 }
 
 .mainDiv__formHolder{
-    background : red;
+    /* background : red; */
     height : 100%;
     position : relative;
     display : flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .mainDiv__createAccount{
-    background : orange;
+    /* background : orange; */
     height : 80%;
     width : 80%;
     position : absolute;
-    z-index : 3;
-    transition: all .7s .1s ease-in-out;
+    transition: all .75s ease-in-out;
 }
 
 .cMoveRight{
@@ -65,36 +65,35 @@ h2{
 /* INITIALLY SOCIAL LINKS DIV WILL BE LEFT MOST*/
 
 .mainDiv__socialLinks{
-    background : mediumturquoise;
+    /* background : mediumturquoise; */
     height : 80%;
     width : 80%;
     position : absolute;
-    z-index : 2;
     transform: translateX(-400px);
-    /* opacity: 0; */
+    transition: all .75s ease-in-out;
 }
 
 .sMoveMiddle{
     transform: translateX(0px);
 }
 
-.sMoveLeft{
+.sMoveMiddleFromRight{
     transform: translate(0px);
-    transition: all 1s ease;
+    transition: all .75s ease;
 }
 
-.sMoveDoubleRight{
+.sMoveRight{
     transform: translateX(400px);
-    transition: all 1s ease;
+    transition: all .75s ease;
 }
 
 .mainDiv__personalInfo{
-    background : darkcyan;
+    /* background : darkcyan; */
     height : 80%;
     width : 80%;
     position : absolute;
-    z-index : 1;
-    transform: translateX(-800px);
+    transform: translateX(-400px);
+    transition: all .75s ease-in-out;
 }
 
 .pMoveMiddle{
@@ -107,7 +106,7 @@ input{
     margin : .8rem auto;
     padding : 10px 5px;
     border : 0;
-    border-bottom: 1.5px solid #191919;
+    border-bottom: 1px solid #191919;
     outline : none;
 }
 
