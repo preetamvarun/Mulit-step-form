@@ -42,16 +42,51 @@ body{
 
 .mainDiv__steps ul{
     list-style: none;
-    width : 100%;
     display : flex;
     justify-content: space-evenly;
-    color : black;
+    color : #241a1a;
     border-bottom: 1px solid #191919;
+    width : 90%;
+    margin : auto;
+    position: relative;
+}
+
+.mainDiv__steps{
+    position: relative;
+}
+
+.mainDiv__statusBar{
+    background-color: rgba(185, 51, 27, 0.74);
+    width : 35%;
+    padding : 1.3rem 0rem;
+    transform: translateY(-100%);
+    margin-left : 5%;
+    position: absolute;
+    z-index: 0;
+    transition: all .75s ease;
+}
+
+.mainDiv__statusBar.trail1{
+    width: 62%;
+}
+
+.mainDiv__statusBar.trail2{
+    width : 90%;
+}
+
+.mainDiv__statusBar.trail3{
+    width : 62%;
+}
+
+.mainDiv__statusBar.trail4{
+    width : 35%;
 }
 
 .mainDiv__steps li{
     font-size : .9rem;
-    padding-bottom: 1rem;
+    padding : .75rem 0rem;
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -82,9 +117,13 @@ h2 {
     color : black;
 }
 
-.mainDiv__socialLinks,.mainDiv__personalInfo{transform: translateX(-400px);}
+.mainDiv__socialLinks,.mainDiv__personalInfo{
+    transform: translateX(-400px);
+}
 
-.sMoveMiddle {transform: translateX(0px);}
+.sMoveMiddle {
+    transform: translateX(0px);
+}
 
 .sMoveMiddleFromRight{
     transform: translate(0px);
@@ -96,7 +135,9 @@ h2 {
     transition: all 1s ease;
 }
 
-.pMoveMiddle {transform: translateX(0px); }
+.pMoveMiddle {
+    transform: translateX(0px); 
+}
 
 input{
     display: block;
