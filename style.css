@@ -5,104 +5,102 @@
 }
 
 body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main{
+    position: relative;
+    height : 100%;
+    width : 100%;
     height : 100vh;
     display : flex;
     justify-content: center;
     align-items: center;
-    background : burlywood;
+    background: url('./img/bckimg2.jpg') no-repeat center center/cover;
     overflow: hidden;
 }
 
+.main::after{
+    position: absolute;
+    content: "";
+    height : 100%;
+    width : 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
 .mainDiv{
-    width : 400px;
-    /* background : mediumorchid; */
-    height : 400px;
+    width : 380px;
+    height : 380px;
     position : relative;
+    border: .3px solid #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: 1;
+    background-color: white;
 }
 
 .mainDiv__steps ul{
     list-style: none;
     width : 100%;
-    background : mediumvioletred;
     display : flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    color : black;
+    border-bottom: 1px solid #191919;
 }
 
 .mainDiv__steps li{
-    padding : 1rem;
-    font-size : 1.1rem;
-    color : white;
+    font-size : .9rem;
+    padding-bottom: 1rem;
 }
+
 
 .mainDiv__formHolder{
-    /* background : red; */
-    height : 100%;
+    height : 70%;
     position : relative;
-    display : flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
-.mainDiv__createAccount{
-    /* background : orange; */
+.mainDiv__createAccount, .mainDiv__socialLinks, .mainDiv__personalInfo{
     height : 80%;
     width : 80%;
     position : absolute;
-    transition: all .75s ease-in-out;
+    transition: all .75s ease;
 }
 
-.cMoveRight{
+.cMoveRight {
     transform : translateX(400px);
 }
 
-h2{
-    text-align: center;
-    padding : .75rem;
-    margin-bottom: 1rem;
+h2 {
+    text-align: center; 
+    font-size: 1.2rem;
+    margin: .4rem 0rem;
+    margin-bottom: 1.5rem;
+    color : black;
 }
 
-/* INITIALLY SOCIAL LINKS DIV WILL BE LEFT MOST*/
+.mainDiv__socialLinks,.mainDiv__personalInfo{transform: translateX(-400px);}
 
-.mainDiv__socialLinks{
-    /* background : mediumturquoise; */
-    height : 80%;
-    width : 80%;
-    position : absolute;
-    transform: translateX(-400px);
-    transition: all .75s ease-in-out;
-}
-
-.sMoveMiddle{
-    transform: translateX(0px);
-}
+.sMoveMiddle {transform: translateX(0px);}
 
 .sMoveMiddleFromRight{
     transform: translate(0px);
-    transition: all .75s ease;
+    transition: all .75s .2s ease;
 }
 
 .sMoveRight{
     transform: translateX(400px);
-    transition: all .75s ease;
+    transition: all 1s ease;
 }
 
-.mainDiv__personalInfo{
-    /* background : darkcyan; */
-    height : 80%;
-    width : 80%;
-    position : absolute;
-    transform: translateX(-400px);
-    transition: all .75s ease-in-out;
-}
-
-.pMoveMiddle{
-    transform: translateX(0px);   
-}
+.pMoveMiddle {transform: translateX(0px); }
 
 input{
     display: block;
-    width : 75%;
+    width : 90%;
     margin : .8rem auto;
     padding : 10px 5px;
     border : 0;
@@ -110,29 +108,28 @@ input{
     outline : none;
 }
 
-.mainDiv__createAccount a{
+
+.mainDiv__createAccount a, .mainDiv__btns a{
     display: inline-block;
     text-decoration: none;
     background: blue;
     color : white;
-    padding : .5rem 1.5rem;
+    padding : .45rem 1.75rem;
     border-radius: 50px;
+    margin-top: 1rem;
+}
+
+.mainDiv__createAccount a{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top : 1rem;
 }
 
-.mainDiv__btns{
-    text-align: center;
-    margin-top : 2rem;
+.mainDiv__btns {
+    text-align: center; 
+    margin-top: 1rem;
 }
 
-.mainDiv__btns a{
-    text-decoration: none;
-    background : blue;
-    color : white;
-    padding : .5rem 1.5rem;
-    border-radius: 50px;
-    margin : 0rem .5rem;
+.mainDiv__btns a:first-child{
+    margin-right: .95rem;
 }

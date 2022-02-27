@@ -26,6 +26,6 @@ sBack.addEventListener('click',function(){
 pBack.addEventListener('click',function(){
     personalInfo.classList.remove('pMoveMiddle');
     socialLinks.classList.remove('sMoveRight');
-    socialLinks.classList.add('sMoveMiddle');
+    socialLinks.classList.remove('sMoveMiddle');
     socialLinks.classList.add('sMoveMiddleFromRight');
 });
