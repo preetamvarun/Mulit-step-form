@@ -22,6 +22,8 @@ sNext.addEventListener('click', function(){
     socialLinks.classList.add('sMoveRight');
     personalInfo.classList.add('pMoveMiddle');
     trails.classList.add('trail2');
+    trails.classList.remove('trail3');
+    trails.classList.remove('trail4');
 });
 
 sBack.addEventListener('click',function(){
