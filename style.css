@@ -4,6 +4,19 @@
     box-sizing : border-box;
 }
 
+:root{
+    --color : linear-gradient(
+        90deg,
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+    );
+}
+
+
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -56,7 +69,7 @@ body{
 }
 
 .mainDiv__statusBar{
-    background-color: orange;
+    background-image: linear-gradient(to right,#ff105f,#ce285d,#ffad06);
     width : 32%;
     height: 100%;
     transform: translateY(-100%);
@@ -70,9 +83,9 @@ body{
     height: 0px;
     width: 0px;
     border : 21px solid;
-    border-color: transparent transparent transparent orange;
+    border-color: transparent transparent transparent #ffad06;
     left : 121px;
-    transform: translateY(-1.5%);
+    transform: translateY(0%) scale(1);
     transition: all .75s ease;
 }
 
@@ -81,7 +94,7 @@ body{
 }
 
 .mainDiv__statusBar.trail1::after{
-    left: 218px;
+    left: 219px;
 
 }
 
@@ -90,7 +103,7 @@ body{
 }
 
 .mainDiv__statusBar.trail2::after{
-    left : 378px;
+    left : 378.5px;
 }
 
 
@@ -99,7 +112,7 @@ body{
 }
 
 .mainDiv__statusBar.trail3::after{
-    left : 218px;
+    left : 219px;
 }
 
 .mainDiv__statusBar.trail4{
@@ -181,11 +194,12 @@ input{
 .mainDiv__createAccount a, .mainDiv__btns a{
     display: inline-block;
     text-decoration: none;
-    background: blue;
-    color : white;
+    color : #333;
     padding : .45rem 1.75rem;
     border-radius: 50px;
     margin-top: 1rem;
+    background-image: var(--color);
+    font-size : .9rem;
 }
 
 .mainDiv__createAccount a{
